@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Notes</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            width: calc(17% - 20px); /* 4 divs in a row for larger screens */
+            height: 300px; 
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: 1px solid #000;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+        }
+
+        .box:hover {
+            transform: translateY(-10px); /* Move div up on hover */
+        }
+
+        .image {
+            height: 200px;
+            width: 200px;
+            padding-top: 30px;
+        }
+
+        .content {
+            position: absolute;
+            font-size: 200%;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Media queries for responsiveness */
+        @media screen and (max-width: 1024px) {
+            .box {
+                width: calc(50% - 20px); /* 2 divs in a row for medium screens */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                width: calc(100% - 20px); /* 1 div in a row for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="https://drive.google.com/drive/folders/1k5uoVAbqXLMUJag66ROyRsX2RG-qNM4H?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/web.png" alt="Python Image">
+        <div class="content">Web Technology 2</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1kGShoTpyOuqVt5DTj8gpCZFOgDF77Jwx?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/se.png" alt="Python Image">
+        <div class="content">Software Engineering</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1k7A25TYevxkiWLoxlNLNTD1W-90g8254?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/sql.png" alt="Python Image">
+        <div class="content">PL/SQL</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1kBUbDwH2VbHDIQpxLSO5h_QJzvfbz9Zs?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/iot.png" alt="Python Image">
+        <div class="content">Internet Of Things</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1kGu-4EMm_5-O0OuWMcBJuNu-RSatfzM4?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/de.png" alt="Python Image">
+        <div class="content">Digital Electronics</div>
+    </a>
+</div>
+
+</body>
+</html>
