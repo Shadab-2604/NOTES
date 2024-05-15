@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Notes</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            width: calc(17% - 20px); /* 4 divs in a row for larger screens */
+            height: 300px; 
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: 1px solid #000;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+        }
+
+        .box:hover {
+            transform: translateY(-10px); /* Move div up on hover */
+        }
+
+        .image {
+            height: 200px;
+            width: 200px;
+            padding-top: 30px;
+        }
+
+        .content {
+            position: absolute;
+            font-size: 200%;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Media queries for responsiveness */
+        @media screen and (max-width: 1024px) {
+            .box {
+                width: calc(50% - 20px); /* 2 divs in a row for medium screens */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                width: calc(100% - 20px); /* 1 div in a row for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="https://drive.google.com/drive/folders/1DtxKsBbbcRIaRKrDX276Id2wvNFBLpKf?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/st.png" alt="Python Image">
+        <div class="content">Software Testing</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1DwGNYY9ZH3d-mB-Q-QxzSeAJVnX5K4VG?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/php.png" alt="Python Image">
+        <div class="content">PHP</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1Dtx2xIff95fp_360w-hTMvBo_aowX4bi?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/java.png" alt="Python Image">
+        <div class="content">Core Java</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1Dxs0oELaC0ZRYoqx5YVApdcFIUaSL9cJ?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/asp.png" alt="Python Image">
+        <div class="content">ASP .NET</div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1ehrncavMjb89xwLbSCoUDjAHyJXeCUF8?usp=drive_link", target="_blank" class="box"> 
+        <img class="image" src="images/android.png" alt="Python Image">
+        <div class="content">Android</div>
+    </a>
+</div>
+
+</body>
+</html>
